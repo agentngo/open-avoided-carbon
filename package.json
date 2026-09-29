@@ -1,0 +1,41 @@
+{
+  "name": "@agentngo/open-avoided-carbon",
+  "version": "1.0.0",
+  "description": "Deterministic, transparent Life Cycle Assessment (LCA) avoided carbon calculator for reuse, secondhand, and circular community exchange.",
+  "author": "Agent NGO / Civic Tech Open Source Working Group",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test tests/calculator.test.mjs",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "carbon-calculator",
+    "avoided-emissions",
+    "lca",
+    "circular-economy",
+    "scope-3",
+    "climate-tech",
+    "mutual-aid",
+    "sustainability",
+    "embodied-carbon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agentngo/open-avoided-carbon.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
